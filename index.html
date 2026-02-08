@@ -8,9 +8,13 @@
     <link 
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 </head>
-<body>
-    
+<body> 
     <!--===== Navigation Bar  =====--> 
 
         <header class="header">
@@ -20,11 +24,11 @@
               <nav class="navbar">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
+                <a href="#services-section">Services</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact-container">Contact</a>
               </nav>
-              <a href="#contact" button class="gradient-btn">Contact Me</button></a>
+              <a href="#contact-container" button class="gradient-btn">Contact Me</button></a>
         </header>
  <!--===== HOME =====-->  
         
@@ -32,12 +36,12 @@
       <div class="home-content">
            <h1>Hi, It's  <span> Ebrahim</span></h1>
            <h3 class="text-animation">I'm a <span></span></h3>
-           <p>creative professional 
-            with a background in mechanical engineering 
-            from Madda Walabu University.</p>
+           <p>👋 Hello! I’m Ebrahim Adem, a passionate Graphic Designer, Video Editor, and Web Developer. 
+            I specialize in a wide range of professional tools, including Photoshop, Illustrator, Premiere Pro, Figma, and Canva. 
+            My technical expertise also extends to HTML, CSS, CapCut, Blender, and AutoCAD.</p>
 
            <div class="social-icons">
-               <a href="#">
+               <a href="#https://t.me/ebru_pyaar">
                <i class="bx bxl-tiktok"></i>
                </a>
                 <a href="#">
@@ -52,8 +56,8 @@
             </div>
        
             <div class="btn-group">
-                <a href="#projects" class="btn">See My Work</a>
-                <a href="#contact"
+                <a href="#projects" class="gradient-btn">See My Work</a>
+                <a href="#contact-container"
                  class="btn">Contact</a>
             </div>
        </div> 
@@ -70,172 +74,378 @@
     </div>
     <div class="about-content">
       <h2>About <span>Me</span></h2>
-      <p>I'm a creative professional with a background
-         in mechanical engineering from Madda Walabu University.
-         Now a passionate graphic designer and video editor, 
-         I thrive on turning ideas into engaging visual stories. 
-         With 2 years of professional experience as a TMR Position 
-         at Safaricom Ethiopia, I bring a unique analytical approach 
-         to creative problem-solving.</p>
+      <p>I am Ebrahim Adem, a creative professional specializing in Graphic Design, Video Editing, and Web Development.
+        I possess advanced proficiency in a diverse toolkit, including Photoshop, Illustrator, Premiere Pro, Figma, Canva, 
+        CapCut, Blender, and AutoCAD, alongside foundational skills in HTML and CSS and the full Microsoft Office Suite. <br>
+        I excel at creating unique, memorable logos, professional CVs/Resumes, and engaging websites.
+        My expertise extends to producing short-form video content and strategic social media templates for Instagram, Facebook, and TikTok.
+        In every project, my core focus remains on delivering clarity, consistency, and a strong visual connection.
+        </p>
          <a href="#" class="btn">Read More</a>
     </div>
   </section>
 
   <!--===== Services =====-->
-
-  <section class="services" id="services">
+  <section class="services-section" id="services-section">
     <h2 class="heading">Services</h2>
-
     <div class="services-container">
-      <div class="service-box">
-         <div class="service-info">
-            <i class="bx bx1-figma"></i>
-            <h4>UI / UX Design</h4>
-            <p>Now a passionate graphic designer and video editor, 
-            I thrive on turning ideas into engaging visual stories. 
-            With 2 years of professional experience as a TMR Position 
-            at Safaricom Ethiopia, </p>
-         </div>
+
+      <!-- Service Card Template -->
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-video"></i></div>
+          <div class="card-title">
+            <h3>Video Editing for Social Media</h3>
+            <p>Short-form videos that engage and grow your audience.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <ul class="service-list">
+          <li>Short-form video creation for TikTok,</li>
+          <li>Adding branded intros and outros/li>
+          <li>Color grading and basic correction</li>
+          <li>File Delivery in High-Quality</li>
+        </ul>
       </div>
-    
-        <div class="service-box">
-         <div class="service-info">
-            <i class="bx bx-code"></i>
-            <h4>Fronted Devolopment</h4>
-            <p>Now a passionate graphic designer and video editor, 
-            I thrive on turning ideas into engaging visual stories. 
-            With 2 years of professional experience as a TMR Position 
-            at Safaricom Ethiopia, </p>
-         </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+          <div class="card-title">
+            <h3>Logo & Brand Identity Design</h3>
+            <p>Complete visual branding packages for your business.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
         </div>
-                <div class="service-box">
-         <div class="service-info">
-            <i class="bx bx-code"></i>
-            <h4>Fronted Devolopment</h4>
-            <p>Now a passionate graphic designer and video editor, 
-            I thrive on turning ideas into engaging visual stories. 
-            With 2 years of professional experience as a TMR Position 
-            at Safaricom Ethiopia, </p>
-         </div>
+        <ul class="service-list">
+          <li>Custom Logo Design</li>
+          <li>Business Card Design</li>
+          <li>Social Media Branding</li>
+          <li>File Delivery in All Formats</li>
+          
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="card-title">
+            <h3>CV / Resume Design</h3>
+            <p>Modern, professional resume designs that get noticed.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
         </div>
-        <div class="service-box">
-         <div class="service-info">
-            <i class="bx bx-code-curly"></i>
-            <h4>Backend Devolopment</h4>
-            <p>Now a passionate graphic designer and video editor, 
-            I thrive on turning ideas into engaging visual stories. 
-            With 2 years of professional experience as a TMR Position 
-            at Safaricom Ethiopia, </p>
-         </div>
-       </div>
+        <ul class="service-list">
+          <li>Custom CV / Resume Layout Design</li>
+          <li>Editable Resume Templates</li>
+          <li>Infographic Resume Design</li>
+          <li>LinkedIn Profile Banner Design</li>
+          
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-image"></i></div>
+          <div class="card-title">
+            <h3>Poster Design for Social Media</h3>
+            <p>Beautiful event and promo posters for Instagram & more.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <ul class="service-list">
+          <li>Custom Poster Design for Social Media Platforms/li>
+          <li>Sale & Promotional Banners</li>
+          <li>Festive & Holiday Posters</li>
+          <li>Event & Announcement Posters</li>
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <div class="card-title">
+            <h3>Web Development</h3>
+            <p>Fully responsive websites built with modern technologies.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <ul class="service-list">
+          <li>Business Website Development</li>
+          <li>Portfolio Website Development</li>
+          <li>Custom Website Design & Development</li>
+          <li>Hosting & Domain Assistance</li>
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="card-title">
+            <h3>PowerPoint Presentation Design</h3>
+            <p>Compelling slides for school, business, or training.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <ul class="service-list">
+          <li>Business & Corporate Presentations</li>
+          <li>Academic & Educational Presentations</li>
+          <li>Infographics & Data Visualization</li>
+          <li>Custom Slide Design</li>
+        </ul>
+      </div>
+
+      <div class="service-card" onclick="toggleList(this)">
+        <div class="card-header">
+          <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="card-title">
+            <h3>Training: Graphics Designer</h3>
+            <p>Step-by-step hands-on training for creative software.</p>
+          </div>
+          <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <ul class="service-list">
+          <li>Adobe Photoshop Training</li>
+          <li>Adobe Illustrator Training</li>
+          <li>Canva & Online Design Tools</li>
+          <li>Basic Blender Training</li>
+        </ul>
+      </div>
+
     </div>
   </section>
-  <!--===== Projects =====-->
+   <!-- Services Section -->
+ 
+ <section  class="projects" id="projects">
+   <h2 class="heading">Portfolio</h2>
+  <div class="filter-buttons">
+    <button class="filter active" data-filter="all">🎨 All Projects</button>
+    <button class="filter" data-filter="branding">💎 Blender Project</button>
+    <button class="filter" data-filter="video">🎬 Video Editing</button>
+    <button class="filter" data-filter="logo">✨ Logo Project</button>
+    <button class="filter" data-filter="Bussines">🎯 Bussines Card</button>
+    <button class="filter" data-filter="Poster">🎯 Poster Design</button>
+    <button class="filter" data-filter="Resume">🎯 CV /Resume Projec</button>
+  </div>
 
-<section class="projects" id="projects">
-    <div class="testimonials-box">
-    <h2 class="heading">Projects</h2>
 
-
-    <div class="projects-box">
-      <div class="project-card">
-         <img src="Photos/Blender/byscyle.png" alt="">
-
-         <h3>Blender Project </h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <a href="blender.html"><div class="btn">Blender Review</div>
-      </div></a>
-
-      <div class="project-card">
-         <img src="/Photos/Logo/E NANNA logo-01.jpg" alt="">
-
-         <h3>Logo Project</h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <a href="logo.html"><div class="btn">Logo Review</div>
-      </div></a>
-
-         <div class="project-card">
-         <img src="/Photos/CV/Shikur CV.jpg" alt="">
-
-         <h3>CV /Resume Project </h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <a href="cv.html"><div class="btn">CV Review</div>
-      </div></a>
-
-         <div class="project-card">
-         <img src="/Photos/my fur.png" alt="">
-
-         <h3>Project 4</h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <div class="btn">Review Project</div>
-      </div>
-
-         <div class="project-card">
-         <img src="/Photos/generetor.png" alt="">
-
-         <h3>Project 5</h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <div class="btn">Review Project</div>
-      </div>
-
-        <div class="project-card">
-         <img src="Photos/sofa.png" alt="">
-
-         <h3>Project 6</h3>
-         <p> Each project reflects my passion 
-         for creating impactful and innovative 
-         digital experiences.</p>
-         <div class="btn">Review Project</div>
+  <!-- Projects -->
+  <div class="projects-container">
+    <!-- Blender -->
+    <div class="project-card" data-category="branding">
+      <img src="Photos/Blender/generetor.png">
+      <div class="caption">
+        <h3>Blender Project </h3>
+        <p>Modern logo design concept</p>
       </div>
     </div>
+    <div class="project-card" data-category="branding">
+      <img src="Photos/Blender/byscyle.png">
+      <div class="caption">
+        <h3>Blender Project </h3>
+        <p>Modern logo design concept</p>
+      </div>
     </div>
+        <div class="project-card" data-category="branding">
+      <img src="Photos/Blender/lalibela.png">
+      <div class="caption">
+        <h3>Blender Project </h3>
+        <p>Modern logo design concept</p>
+      </div>
+    </div>
+        <div class="project-card" data-category="branding">
+      <img src="Photos/Blender/jebena.png">
+      <div class="caption">
+        <h3>Blender Project </h3>
+        <p>Modern logo design concept</p>
+      </div>
+    </div>
+
+    <!-- Video Editing -->
+    <div class="project-card" data-category="video">
+      <img src="Photos/capcut.png" alt="Image 1">
+      <div class="caption">
+        <h3>Videos</h3>
+        <p>Promotional for Tiktok</p>
+      </div>
+    </div>
+    <div class="project-card" data-category="video">
+      <img src="Photos/capcut.png" alt="Image 1">
+      <div class="caption">
+        <h3>Videos</h3>
+        <p>Promotional for Tiktok</p>
+      </div>
+    </div>
+
+
+    <!-- logo -->
+    <div class="project-card" data-category="logo">
+      <img src="Photos/Logo/E NANNA.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Logo Project</h3>
+        <p>Responsive web layout</p>
+      </div>
+    </div>
+    <div class="project-card" data-category="logo">
+      <img src="Photos/Logo/Hiwot Tibtb.png" alt="Image 1">
+      <div class="caption">
+        <h3>Logo Project</h3>
+        <p>Responsive web layout</p>
+      </div>
+    </div>
+
+        <!-- Bussines -->
+    <div class="project-card" data-category="Bussines">
+      <img src="Photos/Bussines Card/Nejiwa Makaup1.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Bussines Card</h3>
+        <p>User-friendly interface</p>
+       </div>
+    </div>
+    <div class="project-card" data-category="Bussines">
+      <img src="Photos/Bussines Card/እንቁ Business Card 1.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Bussines Card</h3>
+        <p>User-friendly interface</p>
+       </div>
+    </div>
+
+        <!-- Poster -->
+    <div class="project-card" data-category="Poster">
+      <img src="Photos/poster/Nurhusen Wedding-01.png" alt="Image 1">
+      <div class="caption">
+        <h3>Poster Design</h3>
+        <p>Promotional materials</p>
+      </div>
+    </div>
+    <div class="project-card" data-category="Poster">
+      <img src="Photos/poster/Nurhusen Wedding-01.png" alt="Image 1">
+      <div class="caption">
+        <h3>Poster Design</h3>
+        <p>Promotional materials</p>
+      </div>
+    </div>
+
+            <!-- Resume -->
+    <div class="project-card" data-category="Resume">
+      <img src="Photos/CV/Shikur CV.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>CV /Resume Projec</h3>
+        <p>Clean and bold style</p>
+      </div>
+    </div>
+    <div class="project-card" data-category="Resume">
+      <img src="Photos/CV/Ebrahim CV.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>CV /Resume Projec</h3>
+        <p>Clean and bold style</p>
+      </div>
+    </div>
+  </section>
+
+  <!--===== Portfolio =====-->
+  <section  class="projects" id="projects">
+  
+   <h2 class="heading">Portfolio</h2>
+
+  <div class="image-grid">
+    <div class="grid-item">
+      <img src="Photos/Blender/jebena.png" alt="Image 1">
+      <div class="caption">
+        <h3>Blender Project </h3>
+        <p>Modern logo design concept</p>
+       <a href="blender.html"><button>View More</button></a>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Photos/Logo/E NANNA.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Logo Project</h3>
+        <p>Responsive web layout</p>
+       <a href="logo.html"><button>View More</button></a>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Photos/CV/Shikur CV.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>CV /Resume Projec</h3>
+        <p>Clean and bold style</p>
+       <a href="cv.html"><button>View More</button></a>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Photos/Bussines Card/Nejiwa Makaup1.jpg" alt="Image 1">
+      <div class="caption">
+        <h3>Bussines Card</h3>
+        <p>User-friendly interface</p>
+       <a href="Bussines-card.html"><button>View More</button></a>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Photos/capcut.png" alt="Image 1">
+      <div class="caption">
+        <h3>Videos</h3>
+        <p>Promotional for Tiktok</p>
+        <a href="video.html"><button>View More</button></a>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="Photos/poster/Nurhusen Wedding-01.png" alt="Image 1">
+      <div class="caption">
+        <h3>Poster Design</h3>
+        <p>Promotional materials</p>
+        <a href="poster.html"><button>View More</button></a>
+      </div>
+    </div>
+    
+  </div>
 </section>
 
 <!--===== Contact =====-->
+ <section class="contact-container" id="contact-container">
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-<section class="contact" id="contact">
-<h2 class="heading">Contact <span>Me</span></h2>
-
-<form action="#">
-
-      <div class="input-group">
-            <div class="input-box">
-                <input type="text" 
-                placeholder="Full Name">
-                <input type="email" 
-                placeholder="Enter Email">
-            </div>
-            
-
-            <div class="input-box">
-              <input type="number" 
-              placeholder="Phone Number">
-              <input type="text" 
-              placeholder="Subject">
-            </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Fill up the form and I will get back to you within 24 hours</p>
+      <div class="info-item"><span>📞</span> Phone: +251 910 2894 84</div>
+      <div class="info-item"><span>📧</span> Email: ebrupyaar@gmail.com</div>
+      <div class="info-item"><span>🌐</span> Website: www.ebrupyaar.com</div>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-tiktok"></i></a> 
+        <a href="#"><i class="bx bxl-telegram"></i></a> 
+        <a href="#"><i class="bx bxl-linkedin"></i></a> 
+   
       </div>
-      <div class="input-group-2">
-              <textarea name="" id="" 
-              placeholder="Your Massage" cols="30" rows="10"></textarea>
-              <input type="submit" value="Send Massage" class="btn">
-             </div>
- </form>
+    </div>
+    <div class="contact-form">
+      <h2>Send us a message</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email" required>
+    
+          <input type="tel" placeholder="Phone"  required pattern="[0-9]{10}" maxlength="10"
+  oninvalid="this.setCustomValidity('Please enter a 10-digit phone number')"
+  oninput="this.setCustomValidity('')">
+        </div>
+        <textarea placeholder="Write your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-</section>
   <footer class="footer">
   <div class="social-icons">
                <a href="#">
-             
                 <i class="bx bxl-tiktok"></i>
                </a>
                 <a href="#">
@@ -249,7 +459,7 @@
                </a>
             </div>
 
-            <ul class="list">
+            <ul class="list"> <b>
               <li>
                 <a href="#">FAQ</a>
               </li>
@@ -264,12 +474,12 @@
               </li>
                             <li>
                 <a href="#contact">Contact</a>
-              </li>
+              </li></b>
             </ul>
             <p class="All-Rights-Reserved">
-            @ Ebrahim Adem | All Rights Reserved</p>
+            © 2025 Ebrahim Adem. All rights reserved.</p>       
+            <p id="currentTime"></p>
    </footer>
-
       <script src="script.js"></script>
 </body>
 </html>
